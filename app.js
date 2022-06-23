@@ -13,10 +13,13 @@ console.log ('********')
         console.log(`${newTodo} added to the list`)
     } else if (input === 'delete') {
         const index = parseInt(prompt ('Enter an index to delete:'));
-        if (!Number.isNaN(index))
-        const deleted todos.splice(index,1);
+        if (!Number.isNaN(index)){
+        const deleted = todos.splice(index, 1);
         console.log (`ok, deleted ${deleted[0]}`);
+    }else {
+        console.log('Unknown index');
     }
+}
     input = prompt('what would you like to do?')
 }
-console.log (alert('You have quit the app'))
+console.log ('You have quit the app');  
